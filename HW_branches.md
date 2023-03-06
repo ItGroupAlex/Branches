@@ -32,21 +32,34 @@
 `$ touch bug_report.json` - create file  
 `$ vim bug_report.json`   - redact file  
 
-5. Запушить структуру багрепорта на внешний репозиторий
+4. Запушить структуру багрепорта на внешний репозиторий
 
 `$ git add .`  
 `$ git commit -m "Create json"`  
 `$ git push`
 
-7. Вмержить ветку Bag Reports в Main  
+5. Вмержить ветку Bag Reports в Main 
+ 
 `$ git checkout master`  
 `$ git merge bagReports`  
+
+6. Запушить main на внешний репозиторий.
+
 `$ git add .`  
 `$ git commit -m "merge with bagreport json"`  
 `$ git push`  
 
-9. Запушить main на внешний репозиторий.
-10. В ветке CheckLists набросать структуру чек листа.
-11. Запушить структуру на внешний репозиторий
-12. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-13. Синхронизировать Внешнюю и Локальную ветки Main
+7. В ветке CheckLists набросать структуру чек листа.
+
+`$ git checkout CheckLists` - move to branch "CheckLists"  
+`$ touch check_list.json` - create file  
+`$ vim check_list.json`   - redact file 
+
+8. Запушить структуру на внешний репозиторий
+
+`$ git add .`  
+`$ git commit -m "Create json"`  
+`$ git push`
+
+11. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+12. Синхронизировать Внешнюю и Локальную ветки Main
