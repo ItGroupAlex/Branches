@@ -35,11 +35,15 @@
 5. Запушить структуру багрепорта на внешний репозиторий
 
 `$ git add .`  
-`$ git commit -m "Create json"`
+`$ git commit -m "Create json"`  
 `$ git push`
 
-7. Вмержить ветку Bag Reports в Main
-
+7. Вмержить ветку Bag Reports в Main  
+`$ git checkout master`  
+`$ git merge bagReports`  
+`$ git add .`  
+`$ git commit -m "merge with bagreport json"`  
+`$ git push`  
 
 9. Запушить main на внешний репозиторий.
 10. В ветке CheckLists набросать структуру чек листа.
